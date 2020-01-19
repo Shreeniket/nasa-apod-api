@@ -13,7 +13,6 @@ apodread = apodurlobj.read()
 
 decodeapod = json.loads(apodread.decode('utf-8'))
 
-
 app = Flask(__name__)
 
 @app.route('/')
