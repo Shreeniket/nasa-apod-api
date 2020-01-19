@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NASA Apod</title>
+  </head>
+  <body>
+    <h1>NASA Astronomical Picture of the Day</h1>
+    <form action = "/upload", method = "POST", enctype="multipart/form-data">
+      <label for = "dateInput">Select Date</label>
+      <input type="date" name="dateInput" value="">
+    <input type = "submit">
+    </form>
+    <br>
+    <p>{{extra}}</p><br>
+    <h3>{{title}}</h3><br>
+    <img src={{url}} ><br>
+    <p>{{exp}}</p>
+    <br>
+    <a href="{{ url_for('download')}}">Download as pdf</a>
+  </body>
+</html>
